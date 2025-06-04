@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Speed Test</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Speed Test</h1>
+    <div class="speedometer">
+      <div class="gauge" id="downloadGauge">
+        <div class="needle"></div>
+        <div class="labels">
+          <span class="min">0 Mbps</span>
+          <span class="max">100 Mbps</span>
+          <span class="current" id="downloadSpeed">0 Mbps</span>
+        </div>
+        <div class="type">Download</div>
+      </div>
+      <div class="gauge" id="uploadGauge">
+        <div class="needle"></div>
+        <div class="labels">
+          <span class="min">0 Mbps</span>
+          <span class="max">100 Mbps</span>
+          <span class="current" id="uploadSpeed">0 Mbps</span>
+        </div>
+        <div class="type">Upload</div>
+      </div>
+    </div>
+    <div class="ping-display">
+      Ping: <span id="pingValue">--</span> ms
+    </div>
+    <button id="testButton">Start Test</button>
+    <div class="history">
+      <h3>History</h3>
+      <div id="historyList"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
